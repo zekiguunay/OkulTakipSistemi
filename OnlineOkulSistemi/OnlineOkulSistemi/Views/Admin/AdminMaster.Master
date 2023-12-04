@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="OnlineOkulSistemi.Views.Admin.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html  xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../../Assets/Lib/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        *{
+            font-family:Poppins;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" style="height:695px;">
+            <div class="col-md-2" style="background-color:crimson;">
+                <div class="row mb-2 mt-5">
+                    <div class="col-md-3">
+                       <img src="../../Assets/Images/icons8-school-building-48.png"/> 
+                    </div>
+                    <div class="col-md-6 pt-3">
+                        <label class="text-white h5 text-center">MS Okulu</label>
+                    </div>
+                </div>
+                <div class="mb-5 mt-5">
+
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md-3">
+                       <img src="../../Assets/Images/icons8-dashboard-layout-48.png"/> 
+                    </div>
+                    <div class="col-md-6 pt-3">
+                        <label class="text-white h6">Panel</label>
+                    </div>
+                </div>
+                 <div class="row mb-2">
+                    <div class="col-md-3">
+                       <img src="../../Assets/Images/icons8-school-building-48.png"/> 
+                    </div>
+                    <div class="col-md-6 pt-3">
+                        <a href="Teachers.aspx"><label class="text-white h6">Öğretmenler</label></a>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md-3">
+                       <img src="../../Assets/Images/icons8-teachers-48.png"/> 
+                    </div>
+                    <div class="col-md-6 pt-3">
+                        <a href="Students.aspx"><label class="text-white h6">Öğrenciler</label></a>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md-3">
+                       <img src="../../Assets/Images/icons8-student-registration-48.png"/> 
+                    </div>
+                    <div class="col-md-6 pt-3">
+                       <a href="Marks.aspx"><label class="text-white h6">İşaretler</label></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                       <img src="../../Assets/Images/icons8-report-card-48.png"/>  
+                    </div>
+                    <div class="col-md-6 pt-3">
+                        <a href="Schedules.aspx"><label class="text-white h6">Programlar</label></a>
+                    </div>
+                </div>
+                 <div class="row mb-5">
+                    <div class="col-md-3">
+                       <img src="../../Assets/Images/icons8-department-48.png"/>  
+                    </div>
+                    <div class="col-md-6 pt-3">
+                        <a href="Departments.aspx"><label class="text-white h6">Bölümler</label></a>
+                    </div>
+                </div>
+                <div class="mt-5" style="height:5px;">
+
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                       <img src="../../Assets/Images/icons8-logout-rounded-48.png"/>  
+                    </div>
+                    <div class="col-md-6 pt-3">
+                    <label class="text-white h6">Çıkış</label>
+                         
+                       
+                    </div>
+                </div>
+              </div>
+            <div class="col-md-10">
+                 <form id="form1" runat="server">
+                 
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+            </div>
+        </div>
+
+    </div>
+    
+
+   
+   
+   
+</body>
+</html>
